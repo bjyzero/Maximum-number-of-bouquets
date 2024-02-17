@@ -14,6 +14,7 @@ int main(void)
     for (auto &x : arr)
         cin >> x;
 
+    //这里如果改成 while(l + 1 != r) 以及 l = mid,会有样例无法通过
     ll l = 0, r = (ll)inf * n, ret = 0;
     while (l <= r)
     {
